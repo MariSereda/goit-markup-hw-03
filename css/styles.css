@@ -153,26 +153,28 @@ header {
 /* Hero styles */
 
 .hero {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--white-color);
   background-color: var(--dark-bg-color);
 }
 
 .hero-container {
-  width: 696px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
 }
 
 .hero h1 {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero button {
