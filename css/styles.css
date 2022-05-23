@@ -284,6 +284,7 @@ header {
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter :not(:first-child) {
@@ -317,26 +318,26 @@ header {
 /* Portfolio styles */
 
 .portfolio-list {
-  margin-top: calc(50px - var(--portfolio-item-gap));
+  margin-top: calc(-1 * var(--portfolio-item-gap));
   margin-left: calc(-1 * var(--portfolio-item-gap));
 
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc (100%/3 - var(--portfolio-item-gap));
 }
 
 .portfolio-item {
-  margin-top: 30px;
+  margin-top: var(--portfolio-item-gap);
   margin-left: var(--portfolio-item-gap);
   background: var(--white-color);
 
   border-bottom: 1px solid #eeeeee;
+  flex-basis: calc (100%/3 - var(--portfolio-item-gap));
 }
 
 .portfolio-descriptions {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  /* border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee; */
 }
 
 .portfolio-descriptions h2 {
